@@ -1,0 +1,28 @@
+.about {
+  color: #000;
+  text-align: center;
+}
+.about h1 {
+  margin-top: 20px;
+  font-size: 6vw;
+}
+
+.about-skills {
+  font-size: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.about-skill {
+  text-align: center;
+  margin: 10px;
+}
+.about-me {
+  margin-top: 40px;
+}
+.about-me p {
+  margin: 20px 100px;
+  font-size: 1.3vw;
+}
