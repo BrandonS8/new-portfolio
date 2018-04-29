@@ -1,6 +1,7 @@
 {
   "name": "new-react-portfolio",
   "version": "0.1.0",
+  "homepage": "https://brandons8.github.io/new-portfolio",
   "private": true,
   "dependencies": {
     "react": "^16.3.2",
@@ -13,6 +14,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
