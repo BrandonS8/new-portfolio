@@ -1,7 +1,6 @@
 nav {
   height: 100%;
-  width: 20%;
-  display: flex;
+  width: 25%;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -11,7 +10,14 @@ nav {
   user-select: none;
   background: rgb(0, 111, 238);
 }
-
+.nav-opener {
+  position: fixed;
+  left: 0;
+  font-size: 2vw;
+  background: rgb(0, 111, 238);
+  padding: 5px 8px;
+  z-index: 2;
+}
 .nav-top {
   width: 100%;
   margin-top: 20px;
@@ -42,7 +48,7 @@ nav {
 }
 .nav-contact {
   text-align: left;
-  font-size: 20px;
+  font-size: 2vw;
   user-select: text;
   position: absolute;
   bottom: 10px;
