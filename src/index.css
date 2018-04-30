@@ -136,6 +136,8 @@ body {
   /* background: #141519; */
   color: #fff;
   font-family: 'Abel', sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 a {

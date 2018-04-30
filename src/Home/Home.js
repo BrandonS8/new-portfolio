@@ -4,6 +4,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
+        <h1 className="home-name">Hello, I'm Brandon.</h1>
         <div className="home-statement">
           <h2>I'm a</h2>
           <h2 className="statement-title">full stack web developer</h2>

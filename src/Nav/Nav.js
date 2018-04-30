@@ -18,11 +18,10 @@ class Nav extends Component {
     }
     this.handleNavOpen = this.handleNavOpen.bind(this)
   }
-  componentDidMount() {
-    console.log('mount')
-  }
+
   handleNavOpen(e) {
     e.preventDefault()
+    this.props.mainMove()
     if (!this.state.open) {
       this.setState({
         open: true,
