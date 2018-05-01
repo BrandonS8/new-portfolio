@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Route, NavLink, Redirect, Switch } from 'react-router-dom'
-import logo from './logo.svg'
+import { Route, Switch } from 'react-router-dom'
 import './App.css'
 import Nav from './Nav/Nav'
 import Portfolio from './Portfolio/Portfolio'

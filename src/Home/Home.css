@@ -8,26 +8,51 @@
   height: 95%;
 }
 .home-name {
-  color: rgb(0, 111, 238);
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 8vw;
-  text-shadow: -8px 4px rgb(255, 218, 98);
+  /* color: rgb(0, 111, 238); */
+  color: black;
+  /* font-family: 'Shadows Into Light', cursive; */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3vw;
+  /* text-shadow: -8px 4px rgb(255, 218, 98); */
   border: none;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  /* width: 100%; */
+  border-right: 5px solid black;
+  animation: type 2s forwards steps(19, end);
+}
+
+/* https://stackoverflow.com/questions/33486228/how-to-fade-in-reveal-one-letter-at-a-time */
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  99% {
+    border-right: 5px solid black;
+  }
+  100% {
+    width: 100%;
+    border-right: none;
+  }
 }
 .home-statement {
   color: #000;
-  font-size: 6vw;
-  display: inline-block;
+  font-size: 4vw;
+  /* font-size: 20px; */
+  /* display: inline-block; */
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .statement-title {
-  background: #ededed;
-  background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
-  background-size: 100% 25px;
-  border: 1px solid #e2e2e2;
+  /* background: #ededed; */
+  background: linear-gradient(180deg, #d9eaf3 0%, #fff 8%) 0 4px;
+  background-size: 100% 23px;
   font-family: 'Shadows Into Light', cursive;
   color: rgba(255, 0, 0, 0.8);
-  padding: 5px;
+  padding: 0px 5px;
   margin: 10px;
 }
 .statement-creativity {

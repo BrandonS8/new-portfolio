@@ -32,6 +32,7 @@ class Project extends Component {
             href={this.props.data.deployed}
             className="projectButton"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Deployed
           </a>
@@ -39,6 +40,7 @@ class Project extends Component {
             href={this.props.data.code}
             className="projectButton"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Code
           </a>

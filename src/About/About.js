@@ -3,40 +3,40 @@ import './About.css'
 class About extends Component {
   render() {
     return (
-      <div class="about">
+      <div className="about">
         <section>
           <h1>My Skills</h1>
           <div className="about-skills">
             <div className="about-skill" style={{ color: '#EEDA68' }}>
-              <i class="fab fa-js" />
+              <i className="fab fa-js" />
               <p>JavaScript</p>
             </div>
             <div className="about-skill" style={{ color: '#77A06F' }}>
-              <i class="fab fa-node-js" />
+              <i className="fab fa-node-js" />
               <p>Node.js</p>
             </div>
             <div className="about-skill" style={{ color: 'lightblue' }}>
-              <i class="fas fa-cube" />
+              <i className="fas fa-cube" />
               <p>Express.js</p>
             </div>
             <div className="about-skill" style={{ color: '#8CDCF8' }}>
-              <i class="icon-reactjs" />
+              <i className="icon-reactjs" />
               <p>React.js</p>
             </div>
             <div className="about-skill" style={{ color: 'red' }}>
-              <i class="icon-ruby" />
+              <i className="icon-ruby" />
               <p>Ruby</p>
             </div>
             <div className="about-skill" style={{ color: 'red' }}>
-              <i class="icon-ruby-on-rails" />
+              <i className="icon-ruby-on-rails" />
               <p>Ruby on Rails</p>
             </div>
             <div className="about-skill" style={{ color: '#3E668D' }}>
-              <i class="icon-postgres" />
+              <i className="icon-postgres" />
               <p>PostgreSQL</p>
             </div>
             <div className="about-skill" style={{ color: '#6CA959' }}>
-              <i class="icon-mongodb" />
+              <i className="icon-mongodb" />
               <p>MongoDB</p>
             </div>
           </div>

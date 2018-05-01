@@ -50,7 +50,7 @@ class Nav extends Component {
     return (
       <div>
         <div
-          class="nav-opener"
+          className="nav-opener"
           onClick={this.handleNavOpen}
           style={this.state.navOpenerStyle}
         >
@@ -79,7 +79,9 @@ class Nav extends Component {
               data-clipboard-text="brandonsears8@gmail.com"
               button-className="copy-button"
             >
-              <i className="fas fa-clipboard" /> COPY EMAIL
+              <p>
+                <i className="fas fa-clipboard" /> COPY EMAIL
+              </p>
             </Clipboard>
             <a className="contactLink" href="mailto:brandonsears8@gmail.com">
               <p>
@@ -91,6 +93,7 @@ class Nav extends Component {
               className="contactLink"
               href="https://github.com/BrandonS8"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <p>
                 <i className="fab fa-github contactIcon" /> /BrandonS8
@@ -100,6 +103,7 @@ class Nav extends Component {
               className="contactLink"
               href="https://www.linkedin.com/in/brandon-sears/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <p>
                 <i className="fab fa-linkedin contactIcon" /> /brandon-sears

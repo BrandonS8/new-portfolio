@@ -53,6 +53,13 @@ nav {
   position: absolute;
   bottom: 10px;
 }
+.nav-contact button {
+  margin: 0;
+  font-size: 2vw;
+}
+.nav-contact button:hover {
+  color: rgb(190, 190, 190);
+}
 .nav-contact p {
   margin-bottom: 10px;
 }
