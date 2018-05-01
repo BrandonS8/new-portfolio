@@ -7,6 +7,10 @@ class Nav extends Component {
   constructor() {
     super()
     this.state = {
+      copyText: 'COPY EMAIL',
+      copyTextStyle: {
+        color: '#fff'
+      },
       open: true,
       navStyle: {
         display: 'flex'
@@ -17,6 +21,24 @@ class Nav extends Component {
       }
     }
     this.handleNavOpen = this.handleNavOpen.bind(this)
+    this.sayCopied = this.sayCopied.bind(this)
+  }
+
+  sayCopied(e) {
+    this.setState({
+      copyText: 'COPIED!',
+      copyTextStyle: {
+        color: 'lightgreen'
+      }
+    })
+    setTimeout(() => {
+      this.setState({
+        copyText: 'COPY EMAIL',
+        copyTextStyle: {
+          color: '#fff'
+        }
+      })
+    }, 2000)
   }
 
   handleNavOpen(e) {
@@ -79,8 +101,8 @@ class Nav extends Component {
               data-clipboard-text="brandonsears8@gmail.com"
               button-className="copy-button"
             >
-              <p>
-                <i className="fas fa-clipboard" /> COPY EMAIL
+              <p onClick={this.sayCopied} style={this.state.copyTextStyle}>
+                <i className="fas fa-clipboard" /> {this.state.copyText}
               </p>
             </Clipboard>
             <a className="contactLink" href="mailto:brandonsears8@gmail.com">

@@ -40,8 +40,6 @@
 .home-statement {
   color: #000;
   font-size: 4vw;
-  /* font-size: 20px; */
-  /* display: inline-block; */
   display: flex;
   font-family: 'Courier New', Courier, monospace;
 }
