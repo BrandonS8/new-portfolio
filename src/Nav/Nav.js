@@ -16,12 +16,29 @@ class Nav extends Component {
         display: 'flex'
       },
       navOpenerStyle: {
-        left: '25%',
+        left: '27.5%',
         tranform: 'none'
       }
     }
     this.handleNavOpen = this.handleNavOpen.bind(this)
     this.sayCopied = this.sayCopied.bind(this)
+    this.hoverColor = this.hoverColor.bind(this)
+  }
+
+  hoverColor() {
+    if (this.state.copyTextStyle.color === '#fff') {
+      this.setState({
+        copyTextStyle: {
+          color: '#141519'
+        }
+      })
+    } else if (this.state.copyTextStyle.color === '#141519') {
+      this.setState({
+        copyTextStyle: {
+          color: '#fff'
+        }
+      })
+    }
   }
 
   sayCopied(e) {
@@ -51,7 +68,7 @@ class Nav extends Component {
           display: 'flex'
         },
         navOpenerStyle: {
-          left: '25%',
+          left: '27.5%',
           tranform: 'none'
         }
       })
@@ -101,7 +118,13 @@ class Nav extends Component {
               data-clipboard-text="brandonsears8@gmail.com"
               button-className="copy-button"
             >
-              <p onClick={this.sayCopied} style={this.state.copyTextStyle}>
+              <p
+                onClick={this.sayCopied}
+                onMouseEnter={this.hoverColor}
+                onMouseLeave={this.hoverColor}
+                style={this.state.copyTextStyle}
+                className="copy-email"
+              >
                 <i className="fas fa-clipboard" /> {this.state.copyText}
               </p>
             </Clipboard>

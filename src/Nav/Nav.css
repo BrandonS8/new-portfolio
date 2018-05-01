@@ -9,6 +9,7 @@ nav {
   left: 0;
   user-select: none;
   background: rgb(0, 111, 238);
+  padding: 0 20px;
 }
 .nav-opener {
   position: fixed;
@@ -46,6 +47,9 @@ nav {
 .nav-links a {
   margin-bottom: 10px;
 }
+nav a:hover {
+  color: #141519;
+}
 .nav-contact {
   text-align: left;
   font-size: 2vw;
@@ -58,7 +62,7 @@ nav {
   font-size: 2vw;
 }
 .nav-contact button:hover {
-  color: rgb(190, 190, 190);
+  color: #141519;
 }
 .nav-contact p {
   margin-bottom: 10px;
@@ -67,9 +71,12 @@ nav {
   background: none;
   border: none;
   font-size: 20px;
-  color: #fff;
   font-family: 'Abel', sans-serif;
   padding: 0;
   margin-bottom: 8px;
   cursor: pointer;
+  user-select: none;
+}
+.copy-button:hover .copy-button p {
+  color: #141519;
 }

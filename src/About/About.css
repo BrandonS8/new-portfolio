@@ -1,8 +1,8 @@
 .about {
-  color: #000;
   text-align: center;
 }
 .about h1 {
+  color: #2371e6;
   margin-top: 20px;
   font-size: 6vw;
   font-family: 'Courier New', Courier, monospace;
@@ -15,6 +15,7 @@
   justify-content: space-between;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .about-skill {
   text-align: center;

@@ -10,14 +10,14 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      width: '76%'
+      width: '70.5%'
     }
     this.mainMove = this.mainMove.bind(this)
   }
   mainMove() {
     if (this.state.width === '100%') {
       this.setState({
-        width: '76%'
+        width: '70.5%'
       })
     } else {
       this.setState({

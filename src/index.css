@@ -133,7 +133,7 @@ table {
 
 body {
   display: flex;
-  /* background: #141519; */
+  background: #141519;
   color: #fff;
   font-family: 'Abel', sans-serif;
   width: 100vw;
