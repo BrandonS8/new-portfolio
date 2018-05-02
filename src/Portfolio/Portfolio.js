@@ -11,6 +11,7 @@ class Portfolio extends Component {
         <Project data={ProjectData.project2} />
         <Project data={ProjectData.project1} />
         <Project data={ProjectData.project3} />
+        <Project data={ProjectData.snaplenses} />
       </div>
     )
   }
