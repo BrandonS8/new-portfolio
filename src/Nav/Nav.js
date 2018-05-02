@@ -24,6 +24,18 @@ class Nav extends Component {
     this.sayCopied = this.sayCopied.bind(this)
     this.hoverColor = this.hoverColor.bind(this)
   }
+  componentDidMount() {
+    if (this.props.windowW <= 1000) {
+      this.setState({
+        navStyle: {
+          width: '100%'
+        },
+        navOpenerStyle: {
+          left: '0'
+        }
+      })
+    }
+  }
 
   hoverColor() {
     if (this.state.copyTextStyle.color === '#fff') {
@@ -62,16 +74,30 @@ class Nav extends Component {
     e.preventDefault()
     this.props.mainMove()
     if (!this.state.open) {
-      this.setState({
-        open: true,
-        navStyle: {
-          display: 'flex'
-        },
-        navOpenerStyle: {
-          left: '27.5%',
-          tranform: 'none'
-        }
-      })
+      if (this.props.windowW <= 1000) {
+        this.setState({
+          open: true,
+          navStyle: {
+            display: 'flex',
+            width: '100%'
+          },
+          navOpenerStyle: {
+            left: '0',
+            tranform: 'none'
+          }
+        })
+      } else {
+        this.setState({
+          open: true,
+          navStyle: {
+            display: 'flex'
+          },
+          navOpenerStyle: {
+            left: '27.5%',
+            tranform: 'none'
+          }
+        })
+      }
     } else {
       this.setState({
         open: false,
