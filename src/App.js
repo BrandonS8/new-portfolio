@@ -20,7 +20,7 @@ class App extends Component {
     this.mainMove = this.mainMove.bind(this)
   }
   // https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs
-  componentDidMount() {
+  componentWillMount() {
     this.updateWindowSize()
     window.addEventListener('resize', this.updateWindowSize)
   }
@@ -48,13 +48,13 @@ class App extends Component {
       })
     }
   }
+
   render() {
     return (
       <div className="app">
         <Nav mainMove={this.mainMove} windowW={this.state.windowW} />
         <main style={this.state.mainStyle}>
           <Switch>
-            {/* <Route path="/contact" render={() => <Contact />} />*/}
             <Route path="/about" render={() => <About />} />
             <Route path="/portfolio" render={() => <Portfolio />} />
             <Route path="/" render={() => <Home />} />

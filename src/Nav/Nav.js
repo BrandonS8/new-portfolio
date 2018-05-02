@@ -4,8 +4,8 @@ import Clipboard from 'react-clipboard.js'
 import './Nav.css'
 import me from './me.jpg'
 class Nav extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       copyText: 'COPY EMAIL',
       copyTextStyle: {
@@ -25,7 +25,7 @@ class Nav extends Component {
     this.hoverColor = this.hoverColor.bind(this)
   }
   componentDidMount() {
-    if (this.props.windowW <= 1000) {
+    if (this.props.windowW <= 1000 && this.props.windowW !== 0) {
       this.setState({
         navStyle: {
           width: '100%'
@@ -70,8 +70,7 @@ class Nav extends Component {
     }, 2000)
   }
 
-  handleNavOpen(e) {
-    e.preventDefault()
+  handleNavOpen() {
     this.props.mainMove()
     if (!this.state.open) {
       if (this.props.windowW <= 1000) {
@@ -129,13 +128,28 @@ class Nav extends Component {
             <h2>FULL STACK WEB DEVELOPER</h2>
           </div>
           <div className="nav-links">
-            <NavLink exact to="/" activeClassName="nav-link-active">
+            <NavLink
+              exact
+              to="/"
+              activeClassName="nav-link-active"
+              onClick={this.handleNavOpen}
+            >
               Home
             </NavLink>
-            <NavLink exact to="/portfolio" activeClassName="nav-link-active">
+            <NavLink
+              exact
+              to="/portfolio"
+              activeClassName="nav-link-active"
+              onClick={this.handleNavOpen}
+            >
               Portfolio
             </NavLink>
-            <NavLink exact to="/about" activeClassName="nav-link-active">
+            <NavLink
+              exact
+              to="/about"
+              activeClassName="nav-link-active"
+              onClick={this.handleNavOpen}
+            >
               About
             </NavLink>
           </div>
