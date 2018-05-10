@@ -56,3 +56,5 @@ class Blog extends Component {
 }
 
 export default Blog
+
+// https://hackernoon.com/import-your-medium-feed-into-react-ceadbaf785c7
