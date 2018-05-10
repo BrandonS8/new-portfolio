@@ -4,6 +4,7 @@
   "homepage": "https://brandons8.github.io/new-portfolio",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.3.2",
     "react-clipboard.js": "^1.1.3",
     "react-dom": "^16.3.2",

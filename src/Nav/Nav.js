@@ -152,6 +152,14 @@ class Nav extends Component {
             >
               About
             </NavLink>
+            <NavLink
+              exact
+              to="/blog"
+              activeClassName="nav-link-active"
+              onClick={this.handleNavOpen}
+            >
+              Blog
+            </NavLink>
           </div>
           <div className="nav-contact">
             <Clipboard

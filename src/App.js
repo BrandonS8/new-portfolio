@@ -5,6 +5,7 @@ import Nav from './Nav/Nav'
 import Portfolio from './Portfolio/Portfolio'
 import Home from './Home/Home'
 import About from './About/About'
+import Blog from './Blog/Blog'
 
 class App extends Component {
   constructor() {
@@ -57,6 +58,7 @@ class App extends Component {
           <Switch>
             <Route path="/about" render={() => <About />} />
             <Route path="/portfolio" render={() => <Portfolio />} />
+            <Route path="/blog" render={() => <Blog />} />
             <Route path="/" render={() => <Home />} />
           </Switch>
         </main>
