@@ -16,7 +16,6 @@ class Blog extends Component {
         'https://cors.now.sh/https://us-central1-aaronklaser-1.cloudfunctions.net/medium?username=@brandons8'
       )
       .then(res => {
-        console.log(res.data.payload.references.Post)
         this.setState({
           posts: res.data.payload.references.Post
         })
@@ -49,6 +48,7 @@ class Blog extends Component {
     }
     return (
       <div className="blog-container">
+        {posts.length ? null : <div className="loading" />}
         <div className="posts-container">{posts}</div>
       </div>
     )
